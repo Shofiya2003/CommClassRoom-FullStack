@@ -1,0 +1,16 @@
+GET /-main Home route for api server
+    200:"Welcome to community classroom"
+GET /- main API home for API server
+    200:"Welcome to Community classroom api"
+GET /api/auth/login -get current user information
+    200:{..UserInfo} If user is logged in
+    401:User is not authorized
+POST /api/auth/register -create a new user
+    201:If the user is registered
+    400:If some bad thing happened
+POST /api/auth/login -login an existing user
+    200:If Successful
+    400:If username password are incorrect
+
+POST /api/auth/logout -Log out the current user
+    204:No Content
